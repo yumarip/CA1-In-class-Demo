@@ -37,9 +37,5 @@
       <item>Coke</item>
       <price>1,25.00</price>
     </entree>
-    <entree>
-      <item>jugon</item>
-      <price>78</price>
-    </entree>
   </section>
 </catalogue>

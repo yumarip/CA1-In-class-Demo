@@ -19,8 +19,8 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 
-function highlightCrepes(idTable, bShowC) {
-    // if bShowVeg is true, then we're highlighting crepes
+function highlightCrep(idTable, bShowC) {
+    // if bShowC is true, then we're highlighting crepes
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);

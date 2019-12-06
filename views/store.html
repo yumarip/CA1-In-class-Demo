@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Sweet Gelato's</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,15 +21,15 @@
     <link href="css/business-casual.min.css" rel="stylesheet">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/PaddysCafeCode.js"></script>
+    <script src="js/ICream.js"></script>
     <script>
         window.addEventListener("load", function() {
             document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             document.querySelector("#calcBill").addEventListener("click", function() {
                 document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             });
-            document.querySelector("#showVeg").addEventListener("click", function() {
-                highlightVegetarian('menuTable', this.checked);
+            document.querySelector("#showCp").addEventListener("click", function() {
+                highlightCrep('menuTable', this.checked);
             });
         });
     </script>
@@ -109,7 +109,7 @@
                         <input type="text" class="form-control" aria-label="Total" name="txtBillAmt">
                          <div class="input-group-append">
                             <div class="input-group-text">
-                                <input type="checkbox" id="showC" aria-label="Checkbox for following text input">
+                                <input type="checkbox" id="showCp" aria-label="Checkbox for following text input">
                             </div>
                         </div>
                         <input class="btn btn-block btn-secondary" type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill">
@@ -195,6 +195,21 @@
 	<script src="js/bootstrap.min.js"></script>
 
   </body>
+
+<!--Validate numeric data-->
+<script>
+        function Valida(formulario) {
+          if ((formulario.item.value.length == 0) || (formulario.price.value.length ==0)) {
+            alert('Information is missing');
+            return false
+          }   
+          if (isNaN(parseInt(formulario.price.value))) {
+            alert('The field must be numeric');
+            return false;
+          }  
+          return true
+          }
+        </script>
 
   <!-- Script to highlight the active date in the hours list -->
   <script>
