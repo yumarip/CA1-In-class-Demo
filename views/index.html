@@ -26,73 +26,76 @@
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-		<div class="container">	<a class="navbar-brand" href="#">Paddy's Cafe</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">	<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="store.html">STORE<span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-left">
-				<h1 class="mt-5">Welcome to Paddy's Cafe</h1>
-				<p class="lead">Select your entrees from the menu below.</p>
-			</div>
-			<div id="results" class="col-lg-8 text-center order-3"></div>
-			<div class="col-lg-4 text-center order-2">
-				<form enctype="application/json" action="/post/json" method="post">
-					<div class="form-group">
-						<select class="form-control" name="sec_n">
-							<option value="0">Side Dishes</option>
-							<option value="1">Breakfast</option>
-							<option value="2">Lunch</option>
-							<option value="3">Dinner</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<input class="form-control" type="text" name="item" placeholder="Item">
-					</div>
-					<div class="form-group">
-						<input class="form-control" type="text" name="price" placeholder="Price">
-					</div>
-					<button type="submit" class="btn btn-primary btn-block">Submit</button>
-				</form>
-                    <button id="delete" class="btn btn-block btn-danger">Delete</button>
-                    <p class="text-muted">To delete an entree, click the required row first</p>
-                <form>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                                                        <span class="input-group-text">&euro;</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Total" name="txtBillAmt">
-                         <div class="input-group-append">
-                            <div class="input-group-text">
-                                <input type="checkbox" id="showVeg" aria-label="Checkbox for following text input">
-                            </div>
-                        </div>
-                        <input class="btn btn-block btn-secondary" type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill">
-                    </div>
-                    
-                </form>
-            </div>
-		</div>
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Sweet Gelato's</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+          </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Store &amp; Estimated order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Page Content -->
+	<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro22.jpg" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-2">
+            <span class="section-heading-upper">Fresh Ice Cream &amp; Crepes</span>
+            <span class="section-heading-lower">Worth have a taste</span>
+          </h2>
+          <p class="mb-3">With a vision of artisanal ice cream as a complete dessert and pastry as a kitchen of many experiences, 
+          we make ice creams that highlight the quality and qualities of natural ingredients: the taste, color and consistency of fruits, 
+          seeds, pods, dairy. That is why the origin and temporality of the ingredients we use are important to us - We guarantee it!
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Our Promise</span>
+              <span class="section-heading-lower">To You</span>
+            </h2>
+            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, 
+            a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. 
+            If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 	<footer class="footer">
 		<div class="container">	<span class="text-muted">&copy; 2019</span>
 		</div>
 	</footer>
 	<!-- Bootstrap core JavaScript -->
 	<script src="jquery/jquery.min.js"></script>
-	<script src="jquery/table.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
 

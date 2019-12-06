@@ -19,19 +19,19 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 
-function highlightVegetarian(idTable, bShowVeg) {
-    // if bShowVeg is true, then we're highlighting vegetarian
+function highlightCrepes(idTable, bShowC) {
+    // if bShowVeg is true, then we're highlighting crepes
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);
     var oTBODY = oTable.getElementsByTagName('tbody')[0];
     var aTRs = oTBODY.getElementsByTagName('tr');
     // walk through each of the table rows and see if it has a 
-    // "vegetarian" attribute on it.
+    // "crepes" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
-        if (aTRs[i].getAttribute('vegetarian') == "true") {
-            if (bShowVeg) {
-                aTRs[i].style.backgroundColor = "lightGreen";
+        if (aTRs[i].getAttribute('crp') == "true") {
+            if (bShowC) {
+                aTRs[i].style.backgroundColor = "MistyRose";
             } else {
                 aTRs[i].style.backgroundColor = "";
             };
