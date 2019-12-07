@@ -1,3 +1,5 @@
+<!-- The code used throughout the program was part facilitated by the teacher, the use of a template and code managed by me.
+Yumari Peña. Student number 2017078.--> 
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">

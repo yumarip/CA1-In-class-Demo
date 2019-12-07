@@ -1,3 +1,6 @@
+//The code used throughout the program was part facilitated by the teacher, the use of a template and code managed by me.
+//Yumari Peña. Student number 2017078.
+
 function draw_table()
 {
 	$("#results").empty();
