@@ -14,7 +14,7 @@
                     </thead>
                     <tbody>
                         <xsl:for-each select="/catalogue/section">
-                            <tr style="font-weight: bold">
+                            <tr style="font-weight: bold" class="centrado">
                                 <td colspan="3">
                                     <xsl:value-of select="@name" />
                                 </td>

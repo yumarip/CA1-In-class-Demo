@@ -9,10 +9,6 @@
       <item>3 scoop</item>
       <price>3,00.00</price>
     </entree>
-    <entree>
-      <item>cerezass</item>
-      <price>26</price>
-    </entree>
   </section>
   <section name="Crepes">
     <entree crp="true">

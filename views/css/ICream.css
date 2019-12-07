@@ -32,6 +32,18 @@ table, th, td {
  th {
      font-weight: bold;
 }
+.editar {
+        color: blue; cursor:pointer;}
+
+#contenedorForm {
+                margin-left: 45px; font-size:12px;}
+
+.boton {   color: black; padding: 5px; margin: 10px;
+            background-color: #b9c9fe;
+            font-weight: bold; }
+.centrado{
+            text-align:center;
+}
 .selected {
             background-color: #dc3545;
             color: #FFF;
