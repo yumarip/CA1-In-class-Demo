@@ -2,10 +2,6 @@
 <catalogue>
   <section name="Ice-Cream">
     <entree>
-      <item>1 scoop</item>
-      <price>2,50.00</price>
-    </entree>
-    <entree>
       <item>2 scoop</item>
       <price>2,75.00</price>
     </entree>
