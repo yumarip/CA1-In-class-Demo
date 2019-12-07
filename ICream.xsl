@@ -4,7 +4,7 @@
                 <table id="menuTable" class="indent">
                     <thead>
                         <tr>
-                            <th colspan="3">Sweet Gelato's Menu</th>
+                            <th colspan="3" style="text-align:center">Sweet Gelato's Menu</th>
                         </tr>
                         <tr>
                             <th>Select</th>

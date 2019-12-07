@@ -77,6 +77,34 @@ router.post('/post/json', function(req, res) {
 
 });
 
+// POST request to update to JSON & XML files
+router.post('/post/update', function(req, res) {
+
+  // Function to read in a JSON file, update to it & convert to XML
+  function updateJSON(obj) {
+    // Function to read in XML file, convert it to JSON, delete the required object and write back to XML file
+    xmlFileToJs('ICream.xml', function(err, result) {
+      if (err) throw (err);
+      //This is where we enable the object based on the position of the section and position of the entree, as being passed on from index.html
+      
+
+      //This is where you pass on information from the form inside index.html in a form of JSON and navigate through our JSON (XML) file to create a new entree object
+      result.catalogue.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price}); //If your XML elements are differet, this is where you have to change to your own element names
+      
+      //This is where we convert from JSON and write back our XML file
+      jsToXmlFile('ICream.xml', result, function(err) {
+        if (err) console.log(err);
+      })
+    })
+  }
+  // Call appendJSON function and pass in body of the current POST request
+  updateJSON(req.body);
+
+// Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
+
+});
+
 // POST request to add to JSON & XML files
 router.post('/post/delete', function(req, res) {
 

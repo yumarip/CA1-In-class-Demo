@@ -53,3 +53,22 @@ $(document).ready(function ()
 {
 	draw_table();
 });
+
+/*function update_row(sec, ent)
+{
+    $("#update").click(function()){
+        $.jax(
+            {
+                url: "/post/update",
+                type: "POST",
+                data:
+                {
+                    section: sec,
+                    entree: ent
+                },
+                cache: false,
+                success: setTimeout(draw_table, 1000)
+            })
+    })
+
+};*/

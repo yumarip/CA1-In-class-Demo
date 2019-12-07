@@ -204,7 +204,11 @@ for (var i=0; i<formulario.length; i++) {
                                }
                 }
                 }
-                if (isNaN(formulario.price.value)==true || /^[1-9]\d$/.test(formulario.price.value)==false ) {alert ('Field Price must be numeric');
+                if (isNaN(formulario.item.value)==false || /^[1-9]\d$/.test(formulario.item.value)==false ) 
+                {alert ('Field Item must be alphabetical');
+todoCorrecto=false;}
+                if (isNaN(formulario.price.value)==true || /^[1-9]\d$/.test(formulario.price.value)==false ) 
+                {alert ('Field Price must be numeric');
 todoCorrecto=false;}
 
 if (todoCorrecto ==true) {formulario.submit();}
