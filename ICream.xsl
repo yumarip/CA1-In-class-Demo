@@ -16,7 +16,7 @@
                         <xsl:for-each select="/catalogue/section">
                             <tr style="font-weight: bold">
                                 <td colspan="3">
-                                    <xsl:value-o-f select="@name" />
+                                    <xsl:value-of select="@name" />
                                 </td>
                             </tr>
                             <xsl:for-each select="entree">
