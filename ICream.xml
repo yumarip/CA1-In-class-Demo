@@ -1,5 +1,3 @@
-<!-- The code used throughout the program was part facilitated by the teacher, the use of a template and code managed by me.
-Yumari Peña. Student number 2017078.--> 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue>
   <section name="Ice-Cream">
@@ -10,6 +8,30 @@ Yumari Peña. Student number 2017078.-->
     <entree>
       <item>3 scoop</item>
       <price>3,00.00</price>
+    </entree>
+    <entree>
+      <item>cereza</item>
+      <price>2.00</price>
+    </entree>
+    <entree>
+      <item>oreo</item>
+      <price>25</price>
+    </entree>
+    <entree>
+      <item>Doble sabor</item>
+      <price>25</price>
+    </entree>
+    <entree>
+      <item>Cerezass</item>
+      <price>2</price>
+    </entree>
+    <entree>
+      <item>Bananas</item>
+      <price>25.00</price>
+    </entree>
+    <entree>
+      <item>Chocolate</item>
+      <price>2.75</price>
     </entree>
   </section>
   <section name="Crepes">
