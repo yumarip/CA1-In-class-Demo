@@ -2,10 +2,6 @@
 <catalogue>
   <section name="Ice-Cream">
     <entree>
-      <item>2 scoop</item>
-      <price>2,75.00</price>
-    </entree>
-    <entree>
       <item>cereza</item>
       <price>2.00</price>
     </entree>
@@ -29,6 +25,18 @@
       <item>Chocolate</item>
       <price>2.75</price>
     </entree>
+    <entree>
+      <item>Helado</item>
+      <price>2</price>
+    </entree>
+    <entree>
+      <item>Helado</item>
+      <price>2</price>
+    </entree>
+    <entree>
+      <item>Cafe</item>
+      <price>2</price>
+    </entree>
   </section>
   <section name="Crepes">
     <entree crp="true">
@@ -42,6 +50,10 @@
     <entree crp="true">
       <item>Nutella + Strawberries + Bananas</item>
       <price>5,50.00</price>
+    </entree>
+    <entree>
+      <item>HELADO</item>
+      <price>5</price>
     </entree>
   </section>
   <section name="Drinks/Extras">
